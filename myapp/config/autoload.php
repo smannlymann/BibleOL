@@ -41,6 +41,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $autoload['packages'] = array();
 
+if (config_item('lj_enabled'))
+    $autoload['packages'][] = APPPATH.'third_party/lj';
+
+
 /*
 | -------------------------------------------------------------------
 |  Auto-load Libraries
